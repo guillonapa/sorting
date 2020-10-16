@@ -43,7 +43,7 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub GUILLONAPA Apache Maven Packages</name>
-			<url>https://maven.pkg.github.com/guillonapa/mazes</url>
+			<url>https://maven.pkg.github.com/guillonapa/sorting</url>
 		</repository>
 	</distributionManagement>
 </project>
