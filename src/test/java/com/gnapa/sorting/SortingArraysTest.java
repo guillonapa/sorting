@@ -49,6 +49,19 @@ public class SortingArraysTest {
         assertTrue(simpleTest(sorter));
     }
 
+    @Test
+    public void optimizedMergeSortTest() {
+        MergeSort sorter = new MergeSort();
+        Integer[] array = List.of(
+            3, 7, 4, 1, 3, 2, 9, 10, 6, 5, 8
+        ).toArray(new Integer[0]);
+        Integer[] sortedArray = List.of(
+            1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 10
+        ).toArray(new Integer[0]);
+        sorter.optimizedMergeSort(array);
+        assertTrue(Arrays.equals(sortedArray, array));
+    }
+
     public boolean simpleTest(Sorter<Integer> sorter) {
         Integer[] array = List.of(
             3, 7, 4, 1, 3, 2, 9, 10, 6, 5, 8
